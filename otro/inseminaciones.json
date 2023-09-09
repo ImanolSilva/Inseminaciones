@@ -1,0 +1,27 @@
+{
+    "inseminaciones": [
+      {
+        "tipo": "Total inseminaciones",
+        "cantidad": 93
+      },
+      {
+        "tipo": "Inseminación sistema",
+        "cantidad": 57,
+        "porcentaje": "61.29%"
+      },
+      {
+        "tipo": "Inseminación Tiempo fijo",
+        "cantidad": 7,
+        "porcentaje": "7.53%"
+      },
+      {
+        "tipo": "Ins por decisión inseminador",
+        "cantidad": 29,
+        "porcentaje": "31.18%"
+      }
+    ]
+  }
+
+
+
+  

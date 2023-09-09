@@ -1,0 +1,24 @@
+{
+    "alertas": [
+      {
+        "tipo": "Animales para inseminar",
+        "cantidad": 500     
+     },
+      {
+        "tipo": "Con inseminación",
+        "cantidad": 410,
+        "porcentaje": "82.00%"
+      },
+      {
+        "tipo": "Sin inseminación",
+        "cantidad": 90,
+        "porcentaje": "18.00%"
+      },
+      {
+        "tipo": "Rechazada por inseminación",
+        "cantidad": 10,
+        "porcentaje": "11.11%"
+      }
+    ]
+  }
+  

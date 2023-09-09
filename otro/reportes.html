@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<ht<!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard de Análisis</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  
+  <body>
+      <!-- Barra de navegación -->
+      <nav class="white">
+          <div class="nav-wrapper">
+              <a href="../otro/reportes.html" class="brand-logo black-text"><i class="material-icons">dashboard</i> DASHBOARD</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="../index.html" class="black-text"><i class="material-icons">home</i></a></li>
+                  <!-- Agrega más elementos de menú con iconos según tus necesidades -->
+              </ul>
+          </div>
+      </nav>
+  
+      <div class="container">
+          <h1>Dashboard de Análisis</h1>
+  
+          <div class="row">
+              <div class="col s12 m6">
+                  <div class="card">
+                      <div class="card-content">
+                          <span class="card-title">Resumen de Alertas</span>
+                          <canvas id="alertasChart"></canvas>
+                          <table>
+                              <tbody id="alertasTableBody"></tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col s12 m6">
+                  <div class="card">
+                      <div class="card-content">
+                          <span class="card-title">Resumen de Inseminaciones</span>
+                          <canvas id="inseminacionesChart"></canvas>
+                          <table>
+                              <tbody id="inseminacionesTableBody"></tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="row">
+              <div class="col s12">
+                  <div class="card">
+                      <div class="card-content">
+                          <span class="card-title">Detalles de Inseminaciones por Hora</span>
+                          <canvas id="detallesChart"></canvas>
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th>Hora</th>
+                                      <th>Animales</th>
+                                      <th>porcentaje</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="detallesTableBody"></tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+
+    <script src="app.js"></script>
+</body>
+</html>

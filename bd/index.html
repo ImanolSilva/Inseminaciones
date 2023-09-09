@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Datos</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <h1 class="mb-4">Datos de Inseminaciones</h1>
+        <div id="resultado" class="mt-4"></div>
+    </div>
+
+    <!-- Enlaces a Bootstrap JS y jQuery (necesarios para Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Llama a la función mostrarDatos directamente cuando se carga la página
+        document.addEventListener("DOMContentLoaded", function() {
+            cargarDatos();
+        });
+
+        function cargarDatos() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    // Maneja la respuesta JSON aquí
+                    var jsonData = JSON.parse(this.responseText);
+                    mostrarDatos(jsonData);
+                }
+            };
+
+            xhttp.open("GET", "../bd/get_data.php", true); // Asegúrate de ajustar la ruta
+            xhttp.send();
+        }
+
+        function mostrarDatos(data) {
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = "";
+
+            if (data.length > 0) {
+                var table = document.createElement("table");
+                table.classList.add("table", "table-striped", "table-bordered");
+                var thead = table.createTHead();
+                var tbody = table.createTBody();
+
+                var row = thead.insertRow();
+                for (var key in data[0]) {
+                    var th = document.createElement("th");
+                    th.innerText = key;
+                    row.appendChild(th);
+                }
+
+                for (var i = 0; i < data.length; i++) {
+                    var row = tbody.insertRow();
+                    for (var key in data[i]) {
+                        var cell = row.insertCell();
+                        cell.innerText = data[i][key];
+                    }
+                }
+
+                resultado.appendChild(table);
+            } else {
+                resultado.innerHTML = '<div class="alert alert-warning text-center">No se encontraron datos.</div>';
+            }
+        }
+    </script>
+</body>
+</html>

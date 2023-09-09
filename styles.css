@@ -1,0 +1,134 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    margin: 0;
+    background-color: #0D5181;
+    position: relative;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.result {
+    border-top: 1px solid #D9D9D9;
+    padding-top: 15px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.result-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.navbar .navbar-brand {
+    padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;
+}
+
+.circle-bg {
+    position: absolute;
+    top: 0;
+    left: -10;
+    transform: translateX(-25%);
+    width: 1000px;
+    height: 1000px;
+    background-color: #fffefe;
+    border-radius: 50%;
+    z-index: -1;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #0D5181;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p {
+    color: rgb(255, 255, 255);
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #00B8FF;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .textBox button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #0D5181;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+ .image-container {
+    position: relative;
+    width: 900px; /* Agrega "px" al final */
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: transform 0.3s;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+

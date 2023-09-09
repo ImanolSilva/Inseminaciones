@@ -1,0 +1,120 @@
+ /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #0D5181;
+    }
+
+    h2 {
+      color: #0D5181;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0A7531;
+      color: white;
+    }
+
+    /* Estilos específicos para las tablas */
+    #tabla-alertas th,
+    #tabla-inseminaciones th,
+    #tabla-detalle-inseminaciones th {
+      background-color: #0D5181;
+      color: white;
+    }
+
+    #tabla-alertas td,
+    #tabla-inseminaciones td,
+    #tabla-detalle-inseminaciones td {
+      text-align: center;
+    }
+
+    /* Estilos para los porcentajes */
+    .porcentaje-cell {
+      font-weight: bold;
+      color: #E8363C;
+    }
+
+    /* Estilos para el contenedor de la tabla de detalles de inseminaciones por hora */
+    #tabla-detalle-inseminaciones-container {
+      width: 80%; /* Ajusta el ancho según tus preferencias */
+      margin: 0 auto;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    #tabla-detalle-inseminaciones {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    #tabla-detalle-inseminaciones th,
+    #tabla-detalle-inseminaciones td {
+      text-align: center;
+      padding: 6px;
+      border: 1px solid #ddd;
+    }
+
+    #tabla-detalle-inseminaciones th {
+      background-color: #0A7531;
+      color: white;
+    }
+
+    .tabla-header {
+      background-color: #0A7531;
+      color: white;
+      font-weight: bold;
+      padding: 6px;
+    }
+
+    .porcentaje-cell {
+      font-weight: bold;
+      color: #E8363C;
+    }
+
+    /* Estilos para el encabezado de cada tabla */
+    .tabla-header {
+      background-color: #0A7531;
+      color: white;
+      font-weight: bold;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Estilos para los contenedores de las tablas */
+    .summary {
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
